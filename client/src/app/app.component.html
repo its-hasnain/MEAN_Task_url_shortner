@@ -1,0 +1,24 @@
+<h1>Url Shortner</h1>
+<form (ngSubmit)="onSubmit(formShorter)" [formGroup]="formShorter">
+  <label for="longUrl">
+    <input
+      type="url"
+      placeholder="your URL here..."
+      [ngClass]="{ invalid: formShorter.invalid }"
+      name="longUrl"
+      formControlName="longUrl"
+      #inputTarget
+    />
+    <button
+      mat-raised-button
+      color="primary"
+      ngxClipboard
+      [cbContent]="inputTarget.value"
+    >
+      Submit
+    </button>
+  </label>
+  <p>
+    <a href="{{ att }}">{{ arr }}</a>
+  </p>
+</form>

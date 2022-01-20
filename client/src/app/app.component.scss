@@ -1,0 +1,39 @@
+:host {
+  display: grid;
+  align-content: center;
+  height: 100%;
+  grid-gap: 20px;
+  place-items: center;
+  form {
+    display: grid;
+    grid-gap: 20px;
+    label {
+      font-size: x-large;
+      display: grid;
+    }
+    input {
+      border-radius: 10px;
+      box-shadow: 0 0 5px #eee;
+      padding: 10px 15px;
+      margin-bottom: 2px;
+      opacity: 0.7;
+    }
+    button[type="button"] {
+      width: 100%;
+      border-radius: 10px;
+      height: 100%;
+    }
+    span {
+      grid-column: span 1;
+    }
+  }
+}
+
+button,
+input {
+  min-height: 30px;
+}
+
+mat-progress-bar {
+  position: absolute;
+}
